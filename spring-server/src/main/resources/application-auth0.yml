@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-reactive-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://access-me.eu.auth0.com/
+logging:
+  level:
+    org:
+      springframework:
+        security: debug

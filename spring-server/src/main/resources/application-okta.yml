@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-reactive-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-667216.oktapreview.com/oauth2/ausjbx4pq5Wg0kZx10h7
+logging:
+  level:
+    org:
+      springframework:
+        security: debug

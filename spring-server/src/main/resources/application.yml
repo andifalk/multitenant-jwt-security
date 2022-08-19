@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-reactive-server
+  profiles:
+    active: multi
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
+            auth0: https://dev-667216.oktapreview.com/oauth2/ausjbx4pq5Wg0kZx10h7
+            okta: https://access-me.eu.auth0.com/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
